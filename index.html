@@ -17,6 +17,33 @@
             </div>
         </div>
         <div class="container">
+            <div class="bass-track">
+                <div class="controls">
+                    <h1>Bass</h1>
+                    <button data-track = "3" class="mute bass-volume">
+                        <i class="fas fa-volume-mute"></i>
+                    </button>
+                    <select name="bass-select" id="bass-select">
+                        <option value="./sounds/bass-deep.wav">Deep Bass</option>
+                        <option value="./sounds/bassF.wav">#F Bass</option>
+                    </select>
+                </div>
+                <div class="bass">
+                    <div class="pad bass-pad b0"></div>
+                    <div class="pad bass-pad b1"></div>
+                    <div class="pad bass-pad b2"></div>
+                    <div class="pad bass-pad b3"></div>
+                    <div class="pad bass-pad b4"></div>
+                    <div class="pad bass-pad b5"></div>
+                    <div class="pad bass-pad b6"></div>
+                    <div class="pad bass-pad b7"></div>
+                    <div class="pad bass-pad b8"></div>
+                    <div class="pad bass-pad b9"></div>
+                    <div class="pad bass-pad b10"></div>
+                    <div class="pad bass-pad b11"></div>
+                </div>
+            </div>
+
             <div class="kick-track">
                 <div class="controls">
                     <h1>Kick</h1>
@@ -42,8 +69,6 @@
                     <div class="pad kick-pad b9"></div>
                     <div class="pad kick-pad b10"></div>
                     <div class="pad kick-pad b11"></div>
-
-
                 </div>
             </div>
 
@@ -53,7 +78,7 @@
                     <button data-track = "1" class="mute snare-volume">
                         <i class="fas fa-volume-mute"></i>
                     </button>
-                    <select name="snare-select" id="kick-select">
+                    <select name="snare-select" id="snare-select">
                         <option value="./sounds/snare-classic.wav">Classic Snare</option>
                         <option value="./sounds/snare-low.wav">Low Snare</option>
                         <option value="./sounds/snare-medium.wav">Medium Snare</option>
@@ -72,7 +97,6 @@
                     <div class="pad snare-pad b9"></div>
                     <div class="pad snare-pad b10"></div>
                     <div class="pad snare-pad b11"></div>
-
                 </div>
             </div>
 
@@ -100,7 +124,173 @@
                     <div class="pad hihat-pad b9"></div>
                     <div class="pad hihat-pad b10"></div>
                     <div class="pad hihat-pad b11"></div>
+                </div>
+            </div>
 
+            <div class="breath-track">
+                <div class="controls">
+                    <h1>Breath</h1>
+                    <button data-track = "4" class="mute breath-volume">
+                        <i class="fas fa-volume-mute"></i>
+                    </button>
+                    <select name="breath-select" id="breath-select">
+                        <option value="./sounds/breath1.wav">Breath 1</option>
+                        <option value="./sounds/breath2.wav">Breath 2</option>
+                        <option value="./sounds/breath3.wav">Breath 3</option>
+                        <option value="./sounds/breath4.wav">Breath 4</option>
+                    </select>
+                </div>
+                <div class="breath">
+                    <div class="pad breath-pad b0"></div>
+                    <div class="pad breath-pad b1"></div>
+                    <div class="pad breath-pad b2"></div>
+                    <div class="pad breath-pad b3"></div>
+                    <div class="pad breath-pad b4"></div>
+                    <div class="pad breath-pad b5"></div>
+                    <div class="pad breath-pad b6"></div>
+                    <div class="pad breath-pad b7"></div>
+                    <div class="pad breath-pad b8"></div>
+                    <div class="pad breath-pad b9"></div>
+                    <div class="pad breath-pad b10"></div>
+                    <div class="pad breath-pad b11"></div>
+                </div>
+            </div>
+
+            <div class="clap-track">
+                <div class="controls">
+                    <h1>Clap</h1>
+                    <button data-track = "5" class="mute clap-volume">
+                        <i class="fas fa-volume-mute"></i>
+                    </button>
+                    <select name="hihat-select" id="clap-select">
+                        <option value="./sounds/clap-behind.wav">Behind</option>
+                        <option value="./sounds/clap-echo.wav">Echo</option>
+                    </select>
+                </div>
+                <div class="clap">
+                    <div class="pad clap-pad b0"></div>
+                    <div class="pad clap-pad b1"></div>
+                    <div class="pad clap-pad b2"></div>
+                    <div class="pad clap-pad b3"></div>
+                    <div class="pad clap-pad b4"></div>
+                    <div class="pad clap-pad b5"></div>
+                    <div class="pad clap-pad b6"></div>
+                    <div class="pad clap-pad b7"></div>
+                    <div class="pad clap-pad b8"></div>
+                    <div class="pad clap-pad b9"></div>
+                    <div class="pad clap-pad b10"></div>
+                    <div class="pad clap-pad b11"></div>
+                </div>
+            </div>
+
+            <div class="hey-track">
+                <div class="controls">
+                    <h1>Hey</h1>
+                    <button data-track = "6" class="mute hey-volume">
+                        <i class="fas fa-volume-mute"></i>
+                    </button>
+                    <select name="hey-select" id="hey-select">
+                        <option value="./sounds/hey1.wav">Hey 1</option>
+                        <option value="./sounds/hey2.wav">Hey 2</option>
+                        <option value="./sounds/hey3.wav">Hey 3</option>
+                    </select>
+                </div>
+                <div class="hey">
+                    <div class="pad hey-pad b0"></div>
+                    <div class="pad hey-pad b1"></div>
+                    <div class="pad hey-pad b2"></div>
+                    <div class="pad hey-pad b3"></div>
+                    <div class="pad hey-pad b4"></div>
+                    <div class="pad hey-pad b5"></div>
+                    <div class="pad hey-pad b6"></div>
+                    <div class="pad hey-pad b7"></div>
+                    <div class="pad hey-pad b8"></div>
+                    <div class="pad hey-pad b9"></div>
+                    <div class="pad hey-pad b10"></div>
+                    <div class="pad hey-pad b11"></div>
+                </div>
+            </div>
+
+            <div class="ho-track">
+                <div class="controls">
+                    <h1>Ho</h1>
+                    <button data-track = "7" class="mute ho-volume">
+                        <i class="fas fa-volume-mute"></i>
+                    </button>
+                    <select name="ho-select" id="ho-select">
+                        <option value="./sounds/ho1.wav">Ho 1</option>
+                        <option value="./sounds/ho2.wav">Ho 2</option>
+                    </select>
+                </div>
+                <div class="ho">
+                    <div class="pad ho-pad b0"></div>
+                    <div class="pad ho-pad b1"></div>
+                    <div class="pad ho-pad b2"></div>
+                    <div class="pad ho-pad b3"></div>
+                    <div class="pad ho-pad b4"></div>
+                    <div class="pad ho-pad b5"></div>
+                    <div class="pad ho-pad b6"></div>
+                    <div class="pad ho-pad b7"></div>
+                    <div class="pad ho-pad b8"></div>
+                    <div class="pad ho-pad b9"></div>
+                    <div class="pad ho-pad b10"></div>
+                    <div class="pad ho-pad b11"></div>
+                </div>
+            </div>
+
+            <div class="oh-track">
+                <div class="controls">
+                    <h1>Ho</h1>
+                    <button data-track = "8" class="mute oh-volume">
+                        <i class="fas fa-volume-mute"></i>
+                    </button>
+                    <select name="oh-select" id="oh-select">
+                        <option value="./sounds/oh1.wav">Oh 1</option>
+                        <option value="./sounds/oh2.wav">Oh 2</option>
+                        <option value="./sounds/oh3.wav">Oh 3</option>
+                    </select>
+                </div>
+                <div class="oh">
+                    <div class="pad oh-pad b0"></div>
+                    <div class="pad oh-pad b1"></div>
+                    <div class="pad oh-pad b2"></div>
+                    <div class="pad oh-pad b3"></div>
+                    <div class="pad oh-pad b4"></div>
+                    <div class="pad oh-pad b5"></div>
+                    <div class="pad oh-pad b6"></div>
+                    <div class="pad oh-pad b7"></div>
+                    <div class="pad oh-pad b8"></div>
+                    <div class="pad oh-pad b9"></div>
+                    <div class="pad oh-pad b10"></div>
+                    <div class="pad oh-pad b11"></div>
+                </div>
+            </div>
+
+            <div class="what-track">
+                <div class="controls">
+                    <h1>What</h1>
+                    <button data-track = "9" class="mute what-volume">
+                        <i class="fas fa-volume-mute"></i>
+                    </button>
+                    <select name="what-select" id="what-select">
+                        <option value="./sounds/what1.wav">What 1</option>
+                        <option value="./sounds/what2.wav">What 2</option>
+                        <option value="./sounds/who.wav">Who</option>
+                    </select>
+                </div>
+                <div class="what">
+                    <div class="pad what-pad b0"></div>
+                    <div class="pad what-pad b1"></div>
+                    <div class="pad what-pad b2"></div>
+                    <div class="pad what-pad b3"></div>
+                    <div class="pad what-pad b4"></div>
+                    <div class="pad what-pad b5"></div>
+                    <div class="pad what-pad b6"></div>
+                    <div class="pad what-pad b7"></div>
+                    <div class="pad what-pad b8"></div>
+                    <div class="pad what-pad b9"></div>
+                    <div class="pad what-pad b10"></div>
+                    <div class="pad what-pad b11"></div>
                 </div>
             </div>
         </div>
@@ -110,7 +300,13 @@
     <audio class="kick-sound" src="./sounds/kick-basic.wav"></audio>
     <audio class="snare-sound" src="./sounds/snare-classic.wav"></audio>
     <audio class="hihat-sound" src="./sounds/hihat-classic.wav"></audio>
-
+    <audio class="bass-sound" src="./sounds/bass-deep.wav"></audio>
+    <audio class="breath-sound" src="./sounds/breath1.wav"></audio>
+    <audio class="clap-sound" src="./sounds/clap-behind.wav"></audio>
+    <audio class="hey-sound" src="./sounds/hey1.wav"></audio>
+    <audio class="ho-sound" src="./sounds/ho1.wav"></audio>
+    <audio class="oh-sound" src="./sounds/oh1.wav"></audio>
+    <audio class="what-sound" src="./sounds/what.wav"></audio>
 
     <script src="./app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>

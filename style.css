@@ -35,7 +35,7 @@ i, svg {
     align-items:center;
 }
 
-.kick-pad, .snare-pad, .hihat-pad {
+.kick-pad, .snare-pad, .hihat-pad, .bass-pad, .breath-pad,.clap-pad,.hey-pad,.ho-pad,.oh-pad,.what-pad {
     width: 3rem;
     height: 3rem;
     margin: 0.5rem 0.25rem;
@@ -51,6 +51,27 @@ i, svg {
 .hihat-pad {
     background: rgb(255, 225, 190);
 } 
+.bass-pad {
+    background: rgb(169, 115, 255);
+}
+.breath-pad {
+    background: rgb(171, 255, 132);
+}
+.clap-pad {
+    background: rgb(255, 145, 145);
+} 
+.hey-pad {
+    background: rgb(255, 141, 255);
+}
+.ho-pad {
+    background: rgb(205, 255, 248);
+}
+.oh-pad {
+    background: rgb(255, 254, 218);
+} 
+.what-pad {
+    background: rgb(255, 190, 190);
+}
 
 .kick-pad.active {
     background: rgb(65, 112, 255);
@@ -60,18 +81,40 @@ i, svg {
     background: rgb(255, 140, 159);
 }
 .hihat-pad.active {
-    background: rgb(255, 196, 129);
+    background: rgb(214, 154, 85);
+}
+.bass-pad.active {
+    background: rgb(130, 53, 255);
+}
+.breath-pad.active {
+    background: rgb(83, 194, 32);
+}
+.clap-pad.active {
+    background: rgb(255, 69, 69);
+} 
+.hey-pad.active {
+    background: rgb(255, 65, 255);
+}
+.ho-pad.active {
+    background: rgb(77, 255, 231);
+}
+.oh-pad.active {
+    background: rgb(199, 196, 48);
+} 
+.what-pad.active {
+    background: rgb(255, 56, 56);
 }
 
-.kick-track, .snare-track, .hihat-track {
+
+.kick-track, .snare-track, .hihat-track, .bass-track, .breath-track,.clap-track,.hey-track,.ho-track,.oh-track,.what-track {
     display: flex;
     align-items: center;
     width: 85%;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
-.kick,.snare,.hihat {
+.kick,.snare,.hihat,.bass,.breath,.clap,.hey,.ho,.oh,.what {
     display: flex;
 }
 

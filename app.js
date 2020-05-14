@@ -5,9 +5,25 @@ class Drumkit {
         this.currentKick = './sounds/kick-basic.wav';
         this.currentSnare = './sounds/snare-classic.wav';
         this.currentHihat = './sounds/hihat-classic.wav';
+        this.currentBass = './sounds/bass-deep.wav';
+        this.currentBreath = './sounds/breath1.wav';
+        this.currentClap = './sounds/clap-behind.wav';
+        this.currentHey = './sounds/hey1.wav';
+        this.currentHo = './sounds/ho1.wav';
+        this.currentOh = './sounds/oh1.wav';
+        this.currentWhat = './sounds/what.wav';
+
         this.kickAudio = document.querySelector(".kick-sound");
         this.hihatAudio = document.querySelector(".hihat-sound");
         this.snareAudio = document.querySelector(".snare-sound");
+        this.bassAudio = document.querySelector(".bass-sound");
+        this.breathAudio = document.querySelector(".breath-sound");
+        this.clapAudio = document.querySelector(".clap-sound");
+        this.heyAudio = document.querySelector(".hey-sound");
+        this.hoAudio = document.querySelector(".ho-sound");
+        this.ohAudio = document.querySelector(".oh-sound");
+        this.whatAudio = document.querySelector(".what-sound");
+
         this.index = 0;
         this.bpm = 150;
         this.isPlaying = null;
@@ -37,6 +53,34 @@ class Drumkit {
                 if(bar.classList.contains("hihat-pad")){
                     this.hihatAudio.currentTime = 0;
                     this.hihatAudio.play();
+                }
+                if(bar.classList.contains("breath-pad")){
+                    this.breathAudio.currentTime = 0;
+                    this.breathAudio.play();
+                }
+                if(bar.classList.contains("bass-pad")){
+                    this.bassAudio.currentTime = 0;
+                    this.bassAudio.play();
+                }
+                if(bar.classList.contains("clap-pad")){
+                    this.clapAudio.currentTime = 0;
+                    this.clapAudio.play();
+                }
+                if(bar.classList.contains("hey-pad")){
+                    this.heyAudio.currentTime = 0;
+                    this.heyAudio.play();
+                }
+                if(bar.classList.contains("ho-pad")){
+                    this.hoAudio.currentTime = 0;
+                    this.hoAudio.play();
+                }
+                if(bar.classList.contains("oh-pad")){
+                    this.ohAudio.currentTime = 0;
+                    this.ohAudio.play();
+                }
+                if(bar.classList.contains("what-pad")){
+                    this.whatAudio.currentTime = 0;
+                    this.whatAudio.play();
                 }
             }
         })
@@ -77,6 +121,27 @@ class Drumkit {
             case "hihat-select":
                 this.hihatAudio.src = selectionValue;
                 break;
+            case "bass-select":
+                this.bassAudio.src = selectionValue;
+                break;
+            case "breath-select":
+                this.breathAudio.src = selectionValue;
+                break;
+            case "clap-select":
+                this.clapAudio.src = selectionValue;
+                break;
+            case "hey-select":
+                this.heyAudio.src = selectionValue;
+                break;
+            case "ho-select":
+                this.hoAudio.src = selectionValue;
+                break;
+            case "oh-select":
+                this.ohAudio.src = selectionValue;
+                break;
+            case "what-select":
+                this.whatAudio.src = selectionValue;
+                break;
         }
     }
     mute(e){
@@ -94,6 +159,27 @@ class Drumkit {
                 case "2":
                     this.hihatAudio.volume = 0;
                     break;
+                case "3":
+                    this.bassAudio.volume = 0;
+                    break;
+                case "4":
+                    this.breathAudio.volume = 0;
+                    break;
+                case "5":
+                    this.clapAudio.volume = 0;
+                    break;
+                case "6":
+                    this.heyAudio.volume = 0;
+                    break;
+                case "7":
+                    this.hoAudio.volume = 0;
+                    break;
+                case "8":
+                    this.ohAudio.volume = 0;
+                    break;
+                case "9":
+                    this.whatAudio.volume = 0;
+                    break;
             }
         } else {
             switch (muteIndex) {
@@ -105,6 +191,27 @@ class Drumkit {
                     break;
                 case "2":
                     this.hihatAudio.volume = 1;
+                    break;
+                case "3":
+                    this.bassAudio.volume = 1;
+                    break;
+                case "4":
+                    this.breathAudio.volume = 1;
+                    break;
+                case "5":
+                    this.clapAudio.volume = 1;
+                    break;
+                case "6":
+                    this.heyAudio.volume = 1;
+                    break;
+                case "7":
+                    this.hoAudio.volume = 1;
+                    break;
+                case "8":
+                    this.ohAudio.volume = 1;
+                    break;
+                case "9":
+                    this.whatAudio.volume = 1;
                     break;
             }
         }
